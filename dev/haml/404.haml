@@ -1,0 +1,19 @@
+!!!
+/[if IE 9] <html class="ie9" lang="en">
+<!--[if gt IE 9]><!-->
+%html{:lang => "en"}<>
+	<!--<![endif]-->
+
+	= Haml::Engine.new(File.read("dev/haml/partials/_doc_head.haml")).render
+
+	%body
+
+		#svgInject.visuallyhidden
+			/ inject:svg
+			/ endinject
+
+		%main{:role => "main"}
+
+			= Haml::Engine.new(File.read("dev/haml/partials/_html_header.haml")).render
+			= Haml::Engine.new(File.read("dev/haml/partials/_html_section.haml")).render
+			= Haml::Engine.new(File.read("dev/haml/partials/_html_footer.haml")).render

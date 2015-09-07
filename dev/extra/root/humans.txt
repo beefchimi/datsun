@@ -1,0 +1,10 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+
+	Northern Army: Ryan Anderson, Rene Antunes, Sian Jones, Curtis Dulmage
+	Theory Tank: Josh Leroux, Chris Murphy, Tom Tomazomalamadingdong, Tyler Copeland
+	Site: http://chicken.ca/
+	Location: Ottawa, Ontario, Canada

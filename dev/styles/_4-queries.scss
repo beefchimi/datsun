@@ -1,0 +1,55 @@
+// ==|== media queries ========================================================
+// ============================================================================
+
+@media only screen and (min-width: 1024px) {
+
+// ==|== primary styles =======================================================
+// ============================================================================
+
+	// Foundation
+	// ----------------------------------------------------------------------------
+	body {
+		padding: 16rem 3.2rem;
+	}
+
+	// Header
+	// ----------------------------------------------------------------------------
+	header {
+		.datsun_logos {
+			margin-bottom: 0;
+		}
+		.datsun_info {
+			.column_left,
+			.column_right {
+				position: absolute;
+			}
+			.column_left {
+				top: 19.2rem;
+				left: 20rem;
+				margin-bottom: 0;
+				.wrap_svg {
+					margin-right: 0;
+				}
+			}
+			.column_right {
+				top: 18rem;
+				right: 18rem;
+				.wrap_svg {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	// Section
+	// ----------------------------------------------------------------------------
+	section {
+		margin-bottom: 0;
+		a {
+			position: absolute;
+			top: -58rem;
+			right: 0;
+		}
+	}
+
+}

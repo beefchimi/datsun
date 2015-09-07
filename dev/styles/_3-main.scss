@@ -1,0 +1,182 @@
+// ==|== primary styles =======================================================
+// ============================================================================
+
+// Foundation
+// ----------------------------------------------------------------------------
+html {
+	color: $hsl_gold;
+	background: url('../img/bg.jpg') center center $hsl_L6 no-repeat fixed;
+	background-size: cover;
+}
+body {
+	padding: 8rem 1.6rem;
+	// allow for centered child (<main> element)
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	// 0% animation styles
+	background-color: hsla(0,0%,0%,1);
+}
+::selection {
+	color: $hsl_gold;
+	background-color: $hsl_gold;
+}
+// --- Page Loader --- \\
+body {
+	animation: animBackgroundColor 800ms ease-in-out forwards;
+}
+main {
+	animation: animFadeInSlideUp 600ms ease-in-out 600ms forwards;
+}
+
+
+// Common
+// ----------------------------------------------------------------------------
+main {
+	// center element within parent (<body> element)
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	// 0% animation styles
+	opacity: 0;
+	transform: translate3d(0,2rem,0);
+}
+header,
+section {
+	position: relative;
+}
+header,
+section,
+footer {
+	@include container(1080);
+}
+header .wrap_svg,
+footer .wrap_svg {
+	margin-left: auto;
+	margin-right: auto;
+	svg {
+		fill: $hsl_gold;
+	}
+}
+
+// Header
+// ----------------------------------------------------------------------------
+header {
+	margin-bottom: 12rem;
+	.datsun_logos {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 12.8rem;
+		width: 50%;
+		max-width: 25rem;
+		.wrap_datsun-wordmark {
+			margin-bottom: 4.6rem;
+			max-width: 25rem;
+		}
+		.wrap_datsun-tiger {
+			margin-bottom: 5.6rem;
+			max-width: 19.8rem;
+		}
+		.wrap_datsun-tagline {
+			max-width: 17.5rem;
+		}
+	}
+	.datsun_info {
+		.column_left,
+		.column_right {
+			.wrap_txt-open {
+				width: 15.7rem;
+			}
+		}
+		.column_left {
+			margin-bottom: 6.4rem;
+			.wrap_txt-window {
+				margin-bottom: 1.4rem;
+				width: 8.8rem;
+			}
+		}
+		.column_right {
+			.wrap_txt-dinner {
+				margin-bottom: 1.4rem;
+				width: 7.6rem;
+			}
+			.wrap_txt-open {
+				margin-bottom: 1.4rem;
+			}
+			.wrap_txt-closed {
+				width: 18.7rem;
+			}
+		}
+	}
+}
+
+// Section
+// ----------------------------------------------------------------------------
+section {
+	margin-bottom: 12rem;
+	a {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 2.4rem;
+		width: 11.2rem;
+		height: 11.2rem;
+		background-color: $hsl_rust;
+		border-radius: 50%;
+		transition: background-color 300ms ease-in-out;
+		.wrap_txt-menu {
+			margin-left: auto;
+			margin-right: auto;
+			width: 6rem;
+		}
+		&:hover {
+			background-color: $hsl_gold;
+		}
+		&:active {
+			background-color: darken($hsl_gold, 10%);
+		}
+	}
+}
+
+// Footer
+// ----------------------------------------------------------------------------
+footer {
+	.wrap_misc-flags {
+		margin-bottom: 2.6rem;
+		width: 7.5rem;
+	}
+	.social_links {
+		margin-bottom: 5.6rem;
+		a {
+			display: inline-block;
+			&:hover svg {
+				fill: $hsl_rust;
+			}
+			&:active svg {
+				fill: darken($hsl_rust, 10%);
+			}
+		}
+		a.wrap_social-twitter {
+			margin-right: 1.6rem;
+			width: 2.6rem;
+		}
+		a.wrap_social-instagram {
+			width: 2.3rem;
+		}
+	}
+	.wrap_txt-footer {
+		margin-bottom: 3.4rem;
+		max-width: 29.4rem;
+	}
+	a.wrap_txt-inquiries {
+		width: 11.8rem;
+		&:hover svg {
+			fill: $hsl_rust;
+		}
+		&:active svg {
+			fill: darken($hsl_rust, 10%);
+		}
+	}
+}
