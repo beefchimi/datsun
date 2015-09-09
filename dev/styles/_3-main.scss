@@ -31,7 +31,6 @@ main {
 	animation: animFadeInSlideUp 600ms ease-in-out 600ms forwards;
 }
 
-
 // Common
 // ----------------------------------------------------------------------------
 main {
@@ -80,33 +79,37 @@ header {
 			max-width: 19.8rem;
 		}
 		.wrap_datsun-tagline {
-			max-width: 17.5rem;
+			max-width: 23.6rem;
 		}
 	}
 	.datsun_info {
 		.column_left,
 		.column_right {
-			.wrap_txt-open {
+			.wrap_txt-time-end {
+				margin-bottom: 1.4rem;
 				width: 15.7rem;
+			}
+			.wrap_txt-closed {
+				width: 17.3rem;
 			}
 		}
 		.column_left {
 			margin-bottom: 6.4rem;
-			.wrap_txt-window {
+			.wrap_txt-window,
+			.wrap_txt-time-start {
 				margin-bottom: 1.4rem;
-				width: 8.8rem;
+			}
+			.wrap_txt-window {
+				width: 8.4rem;
+			}
+			.wrap_txt-time-start {
+				width: 16.7rem;
 			}
 		}
 		.column_right {
 			.wrap_txt-dinner {
 				margin-bottom: 1.4rem;
-				width: 7.6rem;
-			}
-			.wrap_txt-open {
-				margin-bottom: 1.4rem;
-			}
-			.wrap_txt-closed {
-				width: 18.7rem;
+				width: 7.3rem;
 			}
 		}
 	}
